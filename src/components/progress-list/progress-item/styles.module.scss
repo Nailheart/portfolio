@@ -1,0 +1,37 @@
+@use "@/scss/mixins" as *;
+@use "@/scss/keyframes" as *;
+
+.item {
+  position: relative;
+  padding-left: 30px;
+
+  @include media-min(md) {
+    padding-left: 50px;
+  }
+  @include media-min(lg) {
+    padding-left: 100px;
+  }
+}
+
+.icon {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) rotate(-90deg);
+  z-index: 1;
+
+  circle {
+    stroke: var(--color-red);
+
+    &:first-child { fill: var(--color-white); }
+    &:last-child {
+      stroke: var(--color-primary);
+      transition: .1s linear;
+    }
+    &:nth-child(2) {
+      fill: var(--color-red);
+      animation: pulse 2s cubic-bezier(.65, .05, .36, 1) infinite;
+    }
+  }
+}

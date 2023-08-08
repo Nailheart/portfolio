@@ -1,0 +1,91 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  line-height: 1;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.primary {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
+  min-width: 210px;
+  border: 2px solid var(--color-grey);
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: .2s;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+  }
+}
+
+.neon {
+  --color-neon: hsl(317 100% 54%);
+  --color-bg: hsl(323 21% 16%);
+
+  min-width: 210px;
+  color: var(--color-neon);
+  font-size: 2rem;
+  font-weight: 500;
+  border: var(--color-neon) .1em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 
+    0 0 0.1em hsl(0 0% 100% / .3),
+    0 0 0.15em currentColor;
+  box-shadow: 
+    inset 0 0 0.25em 0 var(--color-neon),
+    0 0 0.25em 0 var(--color-neon);
+  position: relative;
+  z-index: 1;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    filter: drop-shadow(0 0 .04em var(--color-neon));
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--color-neon);
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    transform: perspective(1em) rotateX(40deg) scale(1, .35);
+    transition: inherit;
+    filter: blur(1em);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-bg);
+    background-color: var(--color-neon);
+    text-shadow: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}

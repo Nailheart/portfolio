@@ -1,0 +1,35 @@
+@use "@/scss/mixins" as *;
+@use "@/scss/common/vars" as *;
+
+.container {
+  @include container;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+
+  @include media-min(md) {
+    font-size: 6rem;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(map-get($widths, sm) - $gap-sm * 2), 1fr));
+  gap: 30px;
+
+  @include media-min(md) {
+    gap: 50px;
+  }
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  margin-right: 5px;
+}

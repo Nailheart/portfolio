@@ -1,5 +1,8 @@
 import { ReactNode } from 'react';
 import { Nunito } from 'next/font/google';
+
+import { Header } from '@/components/header/header';
+import { Footer } from '@/components/footer/footer';
 import '@/scss/style.scss';
 
 const nunito = Nunito({ subsets: ['latin'] });
@@ -41,9 +44,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <main>
-          {children}
-        </main>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

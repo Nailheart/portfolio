@@ -12,7 +12,7 @@ type Props = {
 const Logo: FC<Props> = ({ className }) => {
   return (
     <Link className={cn(styles.logo, className)} href="/">
-      <Image 
+      <Image
         className={styles.img}
         src="/img/logo.svg"
         width="60"

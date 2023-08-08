@@ -1,0 +1,60 @@
+@use "@/scss/mixins" as *;
+
+.about {
+  h1,
+  h2 {
+    font-size: 6rem;
+    text-align: center;  
+
+    @include media-max(md) {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+}
+
+.container {
+  @include container;
+}
+
+.progressList {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+
+  li {
+    margin-bottom: 50px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card {
+  max-width: 600px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+
+  span {
+    color: var(--color-blue);
+  }
+}
+
+.cardInfo {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1.1rem;
+  font-weight: 500;
+}

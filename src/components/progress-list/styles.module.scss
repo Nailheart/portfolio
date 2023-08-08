@@ -1,0 +1,20 @@
+@use "@/scss/keyframes" as *;
+
+.progressList {
+  padding-left: 15px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.track {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  background: var(--color-primary);
+  transform-origin: top;
+  transition: .1s linear;
+}
