@@ -10,19 +10,21 @@ type Props = {
   href: string;
   title: string;
   iconName: IconName;
+  size?: number;
   className?: string;
 }
 
-const SocialLink: FC<Props> = ({ href, title, iconName, className }) => {
+const SocialLink: FC<Props> = ({ href, title, iconName, size, className }) => {
   return (
     <Link
       className={cn(styles.socialLink, className)}
       href={href}
       aria-label={title}
+      title={title}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon className={styles.socialIcon} name={iconName} />
+      <Icon className={styles.socialIcon} size={size} name={iconName} />
     </Link>
   );
 };
