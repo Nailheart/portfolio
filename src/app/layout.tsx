@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { Nunito } from 'next/font/google';
 
+import { Toast } from '@/components/toast/toast';
 import { Header } from '@/components/header/header';
 import { Footer } from '@/components/footer/footer';
 import '@/scss/style.scss';
@@ -8,9 +9,9 @@ import '@/scss/style.scss';
 const nunito = Nunito({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Nailheart | Portfolio',
+  title: 'Portfolio',
   description: 'Welcome to Yaroslav Lebedenko portfolio',
-  keywords: 'web development, web design, front-end development, html, css, scss, javascript, react, next',
+  keywords: 'web development, front-end development, html, css, scss, javascript, react, next',
   icons: {
     icon: [
       {
@@ -43,10 +44,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body id="home" className={nunito.className}>
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toast />
       </body>
     </html>
   );

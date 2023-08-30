@@ -1,10 +1,14 @@
-import styles from './styles.module.scss';
+import { Spinner } from '@/components/spinner/spinner';
 
-// TODO: create spinner component
 const Loading = () => {
   return (
-    <div className={styles.loader}>
-      <div className={styles.spinner}></div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100%',
+    }}>
+      <Spinner />
     </div>
   );
 };
