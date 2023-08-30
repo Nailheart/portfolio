@@ -1,8 +1,23 @@
 type IconName =
-  | 'email'
+  | 'arrowUp'
+  | 'code'
+  | 'css'
+  | 'externalLink'
+  | 'figma'
   | 'github'
-  | 'link'
-  | 'linkedin'
-  | 'skype';
+  | 'gulp'
+  | 'html'
+  | 'js'
+  | 'linkedIn'
+  | 'location'
+  | 'mail'
+  | 'nextjs'
+  | 'react'
+  | 'rocket'
+  | 'sass'
+  | 'skype'
+  | 'tg'
+  | 'ts'
+;
 
 export { type IconName };
