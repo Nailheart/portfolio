@@ -1,22 +1,23 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 import { cn } from '@/helpers/helpers';
 import styles from './styles.module.scss';
-import { useEffect, useState } from 'react';
 
 const Nav = () => {
-  const pathname = usePathname();
   const [showNav, setShowNav] = useState(false);
   
   const toggleNav = () => setShowNav(!showNav);
   const closeNav = () => setShowNav(false);
 
-  useEffect(() => {
-    closeNav();
-  }, [pathname]);
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'contacts', label: 'Contacts' },
+  ];
 
   return (
     <nav className={cn(
@@ -33,39 +34,17 @@ const Nav = () => {
       </button>
 
       <ul className={styles.navList}>
-        <li className={styles.navItem}>
+        {navItems.map(item => (
+          <li key={item.id} className={styles.navItem}>
             <Link
-              className={cn(
-                styles.navLink,
-                pathname === '/' && styles.navLinkActive,
-              )}
-              href="/"
+              className={styles.navLink}
+              href={'/#' + item.id}
+              onClick={closeNav}
             >
-              Home
+              {item.label}
             </Link>
-        </li>
-        <li className={styles.navItem}>
-            <Link 
-              className={cn(
-                styles.navLink,
-                pathname === '/about' && styles.navLinkActive,
-              )}
-              href="/about"
-            >
-              About
-            </Link>
-        </li>
-        <li className={styles.navItem}>
-            <Link
-              className={cn(
-                styles.navLink,
-                pathname === '/projects' && styles.navLinkActive,
-              )}
-              href="/projects"
-            >
-              Projects
-            </Link>
-        </li>
+          </li>
+        ))}
       </ul>
     </nav>
   );
