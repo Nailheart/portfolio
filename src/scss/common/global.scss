@@ -1,50 +1,53 @@
-@use '@/scss/mixins' as *;
+@use "@/scss/mixins" as *;
 
 :root {
   --color-white: #fff;
   --color-black: #000;
-
-  --color-primary: #2d2e32;
-  --color-secondary: #767676;
-  --color-red: #fe0569;
+  
+  --color-fg: #fff;
+  --color-fg-secondary: #888;
+  --color-bg: #080808;
+  --color-bg-secondary: #262626;
+  --color-accent: #ff004f;
   --color-blue: #147efb;
-  --color-grey: #c4c4c4;
+}
 
-  --shadow: 0 0 10px rgba(0, 0, 0, 0.09);
-
-  // Colors
-  --red1: #ff4234;
-  --black: #151515;
-  --black2: #222;
-
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black: #302e4d;
-  --text-black: #504e70;
+* {
+  &::selection {
+    color: var(--color-accent);
+    background-color: var(--color-bg);
+  }
 }
 
 html {
+  font-size: 16px;
   min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 
 body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  color: var(--color-primary);
+  grid-template-rows: 1fr min-content;
+  color: var(--color-fg);
   min-height: 100vh;
+  background-color: var(--color-bg);
 }
 
 main {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: grid;
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 20px;
+
+  span {
+    color: var(--color-accent);
+  }
 
   @include media-min(md) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 3.75rem;
   }
 }
 
@@ -80,16 +83,29 @@ img {
 }
 
 svg {
-  fill: currentColor;
+  display: block;
 }
 
-[stroke-width] {
-  fill: none;
-  stroke: currentColor;
+.pc_svg__code-shadow,
+.pc_svg__code {
+  animation: float 4s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.pc_svg__button,
+.pc_svg__code {
+  cursor: pointer;
+
+  path {
+    transition: .2s;
+
+    &:hover {
+      fill: var(--color-blue);
+    }
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-40px);
   }
 }
