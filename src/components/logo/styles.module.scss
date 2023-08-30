@@ -1,16 +1,14 @@
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.img {
-  margin-top: 5px;
-}
-
-.text {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1;
-  margin-left: 5px;
+  transform: skewX(-10deg);
+
+  span::first-letter {
+    color: var(--color-accent);
+  }
 }
