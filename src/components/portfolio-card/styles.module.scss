@@ -1,0 +1,46 @@
+@use "@/scss/mixins" as *;
+
+.portfolioCard {
+  padding: 15px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 10px;
+}
+
+.img {
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 1.75 / 1;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.content {
+  font-size: .85rem;
+}
+
+.contentTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.link {
+  @include link-hover(var(--color-accent), left);
+}
+
+.description {
+  font-size: .9rem;
+}
+
+.topics {
+  color: var(--color-fg-secondary);
+}
