@@ -40,7 +40,7 @@ const ContactForm = () => {
       toast.success('Email sent successfully!');
       reset();
     } catch (error) {
-      toast.success('Failed to send message!');
+      toast.error('Failed to send message!');
     }
     setIsLoading(false);
   };

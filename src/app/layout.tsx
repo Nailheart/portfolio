@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 
 import { Toast } from '@/components/toast/toast';
@@ -8,10 +9,10 @@ import '@/scss/style.scss';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Welcome to Yaroslav Lebedenko portfolio',
-  keywords: 'web development, front-end development, html, css, scss, javascript, react, next',
+  keywords: 'web development, front-end development, html, css, scss, javascript, react, next, gulp',
   icons: {
     icon: [
       {
@@ -33,7 +34,6 @@ export const metadata = {
       {
         rel: 'mask-icon',
         url: 'favicon/safari-pinned-tab.svg',
-        color: '#222222',
       },
     ],
   },
