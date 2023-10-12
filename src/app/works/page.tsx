@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <section className={styles.works}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Library</h1>
+        <h1 className={styles.title}>Archive</h1>
 
         <ul className={styles.list}>
           <li>

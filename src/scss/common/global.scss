@@ -10,12 +10,13 @@
   --color-bg-secondary: #262626;
   --color-accent: #ff004f;
   --color-blue: #147efb;
+  --color-yellow: #ffff00;
 }
 
 * {
   &::selection {
-    color: var(--color-accent);
-    background-color: var(--color-bg);
+    color: var(--color-yellow);
+    background-color: transparent;
   }
 }
 

@@ -26,7 +26,11 @@
 .name {
   display: flex;
   align-items: center;
+  color: inherit;
   font-weight: 500;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   transition: .2s;
 
   &:hover {
