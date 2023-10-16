@@ -10,7 +10,7 @@ const About = () => {
     { title: 'HTML', iconName: 'html', href: 'https://html.spec.whatwg.org/multipage/' },
     { title: 'CSS', iconName: 'css', href: 'https://www.w3.org/Style/CSS/' },
     { title: 'JavaScript', iconName: 'js', href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/' },
-    { title: 'TypeScript', iconName: 'ts', href: 'https://www.typescriptlang.org/' },
+    { title: 'TypeScript', iconName: 'typescript', href: 'https://www.typescriptlang.org/' },
     { title: 'Next.js', iconName: 'nextjs', href: 'https://nextjs.org/' },
     { title: 'React', iconName: 'react', href: 'https://react.dev/' },
     { title: 'Sass', iconName: 'sass', href: 'https://sass-lang.com/' },

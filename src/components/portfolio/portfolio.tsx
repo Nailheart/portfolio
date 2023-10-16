@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { PortfolioCard } from '@/components/portfolio-card/portfolio-card';
+import { Card } from '@/components/card/card';
 import styles from './styles.module.scss';
 
 const Portfolio = () => {
@@ -10,33 +10,33 @@ const Portfolio = () => {
 
       <ul className={styles.list}>
         <li>
-          <PortfolioCard
+          <Card
             img="/img/works/youtube-clone.jpg"
-            title="YouTube clone"
-            description="Simplification youtube clone"
-            liveUrl="https://youtube-clone-nailheart.vercel.app/"
+            title="YouTube"
+            description="Youtube clone using rapid api - demo."
+            href="https://youtube-clone-nailheart.vercel.app/"
             githubUrl="https://github.com/Nailheart/youtube-clone"
-            topics="React - Typescript - Rapidapi Youtube v3"
+            topics={['react', 'typescript', 'rapid-api', 'sass']}
           />
         </li>
         <li>
-          <PortfolioCard
+          <Card
             img="/img/works/safari.jpg"
             title="Safari"
-            description="Webstore clothing and accessories"
-            liveUrl="https://nailheart.github.io/Safari/"
+            description="Static multi page store."
+            href="https://nailheart.github.io/Safari/"
             githubUrl="https://github.com/Nailheart/Safari"
-            topics="Sass - Jinja2 - JS"
+            topics={['jinja', 'gulp', 'sass']}
           />
         </li>
         <li>
-          <PortfolioCard
+          <Card
             img="/img/works/mogo.jpg"
             title="Mogo"
-            description="Creative Template landing page"
-            liveUrl="https://nailheart.github.io/Mogo/"
+            description="Creative landing page template."
+            href="https://nailheart.github.io/Mogo/"
             githubUrl="https://github.com/Nailheart/Mogo"
-            topics="Sass - Simplebar - Accordion"
+            topics={['simple-bar', 'sass', 'gulp', 'google-maps',]}
           />
         </li>
       </ul>

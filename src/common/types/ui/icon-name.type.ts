@@ -16,8 +16,14 @@ type IconName =
   | 'rocket'
   | 'sass'
   | 'skype'
-  | 'tg'
-  | 'ts'
+  | 'telegram'
+  | 'typescript'
+  | 'google-maps'
+  | 'jinja'
+  | 'less'
+  | 'linkify'
+  | 'rapid-api'
+  | 'simple-bar'
 ;
 
 export { type IconName };

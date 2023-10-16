@@ -21,8 +21,14 @@ import React from './svg/react.svg';
 import Rocket from './svg/rocket.svg';
 import Sass from './svg/sass.svg';
 import Skype from './svg/skype.svg';
-import Tg from './svg/tg.svg';
-import TS from './svg/typescript.svg';
+import Telegram from './svg/tg.svg';
+import TypeScript from './svg/typescript.svg';
+import GoogleMaps from './svg/google-maps.svg';
+import Jinja from './svg/jinja.svg';
+import Less from './svg/less.svg';
+import Linkify from './svg/linkify.svg';
+import RapidApi from './svg/rapid-api.svg';
+import SimpleBar from './svg/simple-bar.svg';
 
 const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   arrowUp: ArrowUp,
@@ -42,8 +48,14 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   rocket: Rocket,
   sass: Sass,
   skype: Skype,
-  tg: Tg,
-  ts: TS,
+  telegram: Telegram,
+  typescript: TypeScript,
+  'google-maps': GoogleMaps,
+  jinja: Jinja,
+  less: Less,
+  linkify: Linkify,
+  'rapid-api': RapidApi,
+  'simple-bar': SimpleBar,
 }
 
 type Props = SVGProps<SVGSVGElement> & {

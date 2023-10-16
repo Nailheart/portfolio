@@ -1,7 +1,6 @@
-import { PortfolioCard } from "@/components/portfolio-card/portfolio-card";
+import { Card } from "@/components/card/card";
 import styles from './styles.module.scss';
 
-// TODO: add filter for topics ?
 const Works = () => {
   return (
     <section className={styles.works}>
@@ -10,83 +9,84 @@ const Works = () => {
 
         <ul className={styles.list}>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/youtube-clone.jpg"
-              title="YouTube clone"
-              description="Simplification youtube clone"
-              liveUrl="https://youtube-clone-nailheart.vercel.app/"
+              title="YouTube"
+              description="Youtube clone using rapid api - demo."
+              href="https://youtube-clone-nailheart.vercel.app/"
               githubUrl="https://github.com/Nailheart/youtube-clone"
-              topics="React - Typescript - Rapidapi Youtube v3"
+              topics={['react', 'typescript', 'rapid-api', 'sass']}
             />
           </li>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/safari.jpg"
               title="Safari"
-              description="Webstore clothing and accessories"
-              liveUrl="https://nailheart.github.io/Safari/"
+              description="Static multi page store."
+              href="https://nailheart.github.io/Safari/"
               githubUrl="https://github.com/Nailheart/Safari"
-              topics="Sass - Jinja2 - JS"
+              topics={['jinja', 'gulp', 'sass']}
             />
           </li>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/mogo.jpg"
               title="Mogo"
-              description="Creative Template landing page"
-              liveUrl="https://nailheart.github.io/Mogo/"
+              description="Creative landing page template."
+              href="https://nailheart.github.io/Mogo/"
               githubUrl="https://github.com/Nailheart/Mogo"
-              topics="Sass - Simplebar - Accordion"
+              topics={['simple-bar', 'sass', 'gulp', 'google-maps',]}
             />
           </li>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/cat-energy.jpg"
               title="Cat Energy"
-              description="Online food store for cats"
-              liveUrl="https://nailheart.github.io/377731-cat-energy-21/"
+              description="Online food store for cats."
+              href="https://nailheart.github.io/377731-cat-energy-21/"
               githubUrl="https://github.com/Nailheart/377731-cat-energy-21"
-              topics="Less - Google map"
+              topics={['less', 'google-maps']}
             />
           </li>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/technomart.jpg"
               title="Technomart"
-              description="Technomart - online store of building materials and repair tools"
-              liveUrl="https://nailheart.github.io/377731-technomart-29/"
+              description="Store of building materials and repair tools."
+              href="https://nailheart.github.io/377731-technomart-29/"
               githubUrl="https://github.com/Nailheart/377731-technomart-29"
-              topics="CSS - JS - LocalStorage"
+              topics={['css', 'js']}
             />
           </li>
           <li>
-            <PortfolioCard
+            <Card
               img="/img/works/todo.jpg"
               title="Todo"
-              description="Simple to do list with save on localStorage"
-              liveUrl="https://nailheart.github.io/Todo/"
+              description="Simple to do list with save on localStorage."
+              href="https://nailheart.github.io/Todo/"
               githubUrl="https://github.com/Nailheart/Todo"
-              topics="Sass - JS - LocalStorage"
+              topics={['js', 'sass']}
             />
           </li>
           <li>
-            <PortfolioCard
-              img="/img/works/memory-game.jpg"
-              title="Memory game"
-              description="Responsive memory game"
-              liveUrl="https://nailheart.github.io/memory-game/"
-              githubUrl="https://github.com/Nailheart/memory-game"
-              topics="HTML - SCSS - JS"
-            />
-          </li>
-          <li>
-            <PortfolioCard
+            <Card
               img="/img/works/sol-conveter.jpg"
               title="Sol conveter"
-              description="Convert sols (Martian solar day) to day (Earth solar day)"
-              liveUrl="https://nailheart.github.io/sol-converter/"
+              description="Convert sols (Martian solar day) to day (Earth solar day)."
+              href="https://nailheart.github.io/sol-converter/"
               githubUrl="https://github.com/Nailheart/sol-converter"
-              topics="HTML - SCSS - JS"
+              topics={['html', 'js', 'sass']}
+            />
+          </li>
+          
+          <li>
+            <Card
+              img="/img/works/memory-game.jpg"
+              title="Memory game"
+              description="Responsive memory game."
+              href="https://nailheart.github.io/memory-game/"
+              githubUrl="https://github.com/Nailheart/memory-game"
+              topics={['html', 'js', 'sass']}
             />
           </li>
         </ul>

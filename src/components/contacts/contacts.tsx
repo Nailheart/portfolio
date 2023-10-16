@@ -57,7 +57,7 @@ const Contacts = () => {
           <SocialLink
             className={styles.socialLink}
             href="https://t.me/Nailheart"
-            iconName="tg"
+            iconName="telegram"
             title="telegram"
           />
         </div>
