@@ -24,6 +24,11 @@ type IconName =
   | 'linkify'
   | 'rapid-api'
   | 'simple-bar'
+  | 'pusher'
+  | 'upstash'
+  | 'redis'
+  | 'tailwindcss'
+  | 'green-sock'
 ;
 
 export { type IconName };

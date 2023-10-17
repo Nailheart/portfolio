@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 const Intro = () => {
   return (
-    <section className={styles.intro}>
+    <section id="home" className={styles.intro}>
       {/* TODO: add coffee animation or enable / disable monitor */}
       <PC className={styles.pc} />
 

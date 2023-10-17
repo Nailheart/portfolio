@@ -14,19 +14,19 @@ const Portfolio = () => {
             img="/img/works/youtube-clone.jpg"
             title="YouTube"
             description="Youtube clone using rapid api - demo."
-            href="https://youtube-clone-nailheart.vercel.app/"
+            href="https://youtube-clone-nailheart.vercel.app"
             githubUrl="https://github.com/Nailheart/youtube-clone"
             topics={['react', 'typescript', 'rapid-api', 'sass']}
           />
         </li>
         <li>
           <Card
-            img="/img/works/safari.jpg"
-            title="Safari"
-            description="Static multi page store."
-            href="https://nailheart.github.io/Safari/"
-            githubUrl="https://github.com/Nailheart/Safari"
-            topics={['jinja', 'gulp', 'sass']}
+            img="/img/works/chatiko.jpg"
+            title="Chatiko"
+            description="Realtime chat app."
+            href="https://chatiko.vercel.app"
+            githubUrl="https://github.com/Nailheart/chatiko"
+            topics={['nextjs', 'typescript', 'pusher', 'upstash', 'redis', 'tailwindcss']}
           />
         </li>
         <li>
@@ -34,7 +34,7 @@ const Portfolio = () => {
             img="/img/works/mogo.jpg"
             title="Mogo"
             description="Creative landing page template."
-            href="https://nailheart.github.io/Mogo/"
+            href="https://nailheart.github.io/Mogo"
             githubUrl="https://github.com/Nailheart/Mogo"
             topics={['simple-bar', 'sass', 'gulp', 'google-maps',]}
           />

@@ -29,6 +29,11 @@ import Less from './svg/less.svg';
 import Linkify from './svg/linkify.svg';
 import RapidApi from './svg/rapid-api.svg';
 import SimpleBar from './svg/simple-bar.svg';
+import Pusher from './svg/pusher.svg';
+import Upstash from './svg/upstash.svg';
+import Redis from './svg/redis.svg';
+import Tailwindcss from './svg/tailwindcss.svg';
+import Gsap from './svg/gsap.svg';
 
 const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   arrowUp: ArrowUp,
@@ -56,6 +61,11 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   linkify: Linkify,
   'rapid-api': RapidApi,
   'simple-bar': SimpleBar,
+  pusher: Pusher,
+  upstash: Upstash,
+  redis: Redis,
+  tailwindcss: Tailwindcss,
+  'green-sock': Gsap,
 }
 
 type Props = SVGProps<SVGSVGElement> & {

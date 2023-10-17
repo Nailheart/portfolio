@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
-  
+
   const toggleNav = () => setShowNav(!showNav);
   const closeNav = () => setShowNav(false);
 
@@ -20,12 +20,8 @@ const Nav = () => {
   ];
 
   return (
-    <nav className={cn(
-        styles.nav,
-        showNav && styles.navActive,
-      )}
-    >
-      <button 
+    <nav className={cn(styles.nav, showNav && styles.navActive)}>
+      <button
         className={styles.navToggle}
         aria-label="Toggle navigation"
         onClick={toggleNav}

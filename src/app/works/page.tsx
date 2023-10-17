@@ -10,6 +10,16 @@ const Works = () => {
         <ul className={styles.list}>
           <li>
             <Card
+              img="/img/works/chatiko.jpg"
+              title="Chatiko"
+              description="Realtime chat app."
+              href="https://chatiko.vercel.app"
+              githubUrl="https://github.com/Nailheart/chatiko"
+              topics={['nextjs', 'typescript', 'pusher', 'upstash', 'redis', 'tailwindcss']}
+            />
+          </li>
+          <li>
+            <Card
               img="/img/works/youtube-clone.jpg"
               title="YouTube"
               description="Youtube clone using rapid api - demo."
@@ -20,12 +30,12 @@ const Works = () => {
           </li>
           <li>
             <Card
-              img="/img/works/safari.jpg"
-              title="Safari"
-              description="Static multi page store."
-              href="https://nailheart.github.io/Safari/"
-              githubUrl="https://github.com/Nailheart/Safari"
-              topics={['jinja', 'gulp', 'sass']}
+              img="/img/works/figma-land.jpg"
+              title="Figma land"
+              description="Landing page with gsap animation."
+              href="https://nailheart.github.io/figma-land/"
+              githubUrl="https://github.com/Nailheart/figma-land"
+              topics={['html', 'sass', 'gulp', 'green-sock']}
             />
           </li>
           <li>
@@ -40,12 +50,22 @@ const Works = () => {
           </li>
           <li>
             <Card
+              img="/img/works/safari.jpg"
+              title="Safari"
+              description="Static multi page store."
+              href="https://nailheart.github.io/Safari/"
+              githubUrl="https://github.com/Nailheart/Safari"
+              topics={['jinja', 'gulp', 'sass']}
+            />
+          </li>
+          <li>
+            <Card
               img="/img/works/cat-energy.jpg"
               title="Cat Energy"
               description="Online food store for cats."
               href="https://nailheart.github.io/377731-cat-energy-21/"
               githubUrl="https://github.com/Nailheart/377731-cat-energy-21"
-              topics={['less', 'google-maps']}
+              topics={['html', 'less', 'google-maps']}
             />
           </li>
           <li>
@@ -55,7 +75,7 @@ const Works = () => {
               description="Store of building materials and repair tools."
               href="https://nailheart.github.io/377731-technomart-29/"
               githubUrl="https://github.com/Nailheart/377731-technomart-29"
-              topics={['css', 'js']}
+              topics={['html', 'css']}
             />
           </li>
           <li>
