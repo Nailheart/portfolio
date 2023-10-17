@@ -32,7 +32,7 @@ const Works = () => {
             <Card
               img="/img/works/figma-land.jpg"
               title="Figma land"
-              description="Landing page with gsap animation."
+              description="Landing page."
               href="https://nailheart.github.io/figma-land/"
               githubUrl="https://github.com/Nailheart/figma-land"
               topics={['html', 'sass', 'gulp', 'green-sock']}

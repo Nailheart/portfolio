@@ -31,7 +31,7 @@ const About = () => {
 
         <div className={styles.content}>
           <h2 className={styles.title}>About <span>Me</span></h2>
-          <p className={styles.text}>Greetings! I'm <span>Yaroslav Lebedenko</span>, a dedicated frontend developer driven by my love for crafting fully responsive and user-centric websites. My expertise lies in frontend technologies, including <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>. Currently, I'm deeply engaged with <span>React</span>, <span>Next.js</span>, and <span>TypeScript</span>, pushing the boundaries of what can be achieved. I maintain a perpetual commitment to honing my skills and keeping pace with the ever-evolving landscape of industry trends.</p>
+          <p className={styles.text}>Greetings! I&apos;m <span>Yaroslav Lebedenko</span>, a dedicated frontend developer driven by my love for crafting fully responsive and user-centric websites. My expertise lies in frontend technologies, including <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>. Currently, I&apos;m deeply engaged with <span>React</span>, <span>Next.js</span>, and <span>TypeScript</span>, pushing the boundaries of what can be achieved. I maintain a perpetual commitment to honing my skills and keeping pace with the ever-evolving landscape of industry trends.</p>
         </div>
       </div>
 

@@ -10,10 +10,10 @@ const Intro = () => {
       <div className={styles.description}>
         <h1 className={styles.title}>
           Hello there! 👋<br/>
-          I'm <span>Yaroslav Lebedenko</span>
+          I&apos;m <span>Yaroslav Lebedenko</span>
         </h1>
 
-        <p className={styles.text}>I'm a frontend developer from Ukraine, and this is my small portfolio website. Thank you for visiting, and I hope you enjoy exploring my portfolio.</p>
+        <p className={styles.text}>I&apos;m a frontend developer from Ukraine, and this is my small portfolio website. Thank you for visiting, and I hope you enjoy exploring my portfolio.</p>
       </div>
     </section>
   );
