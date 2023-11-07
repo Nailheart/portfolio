@@ -9,8 +9,10 @@ const Contacts = () => {
   return (
     <section id="contacts" className={styles.contacts}>
       <div className={styles.content}>
-        <h2 className={styles.title}>Contact <span>Me!</span></h2>
-        
+        <h2 className={styles.title}>
+          Contact <span>Me!</span>
+        </h2>
+
         <div className={styles.info}>
           <div className={styles.infoItem}>
             <Icon className={styles.icon} name="mail" size={30} />
@@ -59,6 +61,12 @@ const Contacts = () => {
             href="https://t.me/Nailheart"
             iconName="telegram"
             title="telegram"
+          />
+          <SocialLink
+            className={styles.socialLink}
+            href="https://codepen.io/Nailheart"
+            iconName="codepen"
+            title="codepen"
           />
         </div>
       </div>

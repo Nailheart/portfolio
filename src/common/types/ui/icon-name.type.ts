@@ -29,6 +29,6 @@ type IconName =
   | 'redis'
   | 'tailwindcss'
   | 'green-sock'
-;
+  | 'codepen';
 
 export { type IconName };

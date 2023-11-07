@@ -34,6 +34,7 @@ import Upstash from './svg/upstash.svg';
 import Redis from './svg/redis.svg';
 import Tailwindcss from './svg/tailwindcss.svg';
 import Gsap from './svg/gsap.svg';
+import Codepen from './svg/codepen.svg';
 
 const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   arrowUp: ArrowUp,
@@ -66,18 +67,24 @@ const icons: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {
   redis: Redis,
   tailwindcss: Tailwindcss,
   'green-sock': Gsap,
-}
+  codepen: Codepen,
+};
 
 type Props = SVGProps<SVGSVGElement> & {
   name: IconName;
   size?: number | string;
-}
+};
 
-const Icon: FC<Props> = ({ name, size=24, className, ...rest }) => {
+const Icon: FC<Props> = ({ name, size = 24, className, ...rest }) => {
   const SVG = icons[name];
-  
+
   return (
-    <SVG className={cn(styles.icon, className)} width={size} height={size} {...rest} />
+    <SVG
+      className={cn(styles.icon, className)}
+      width={size}
+      height={size}
+      {...rest}
+    />
   );
 };
 
