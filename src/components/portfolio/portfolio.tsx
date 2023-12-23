@@ -6,7 +6,9 @@ import styles from './styles.module.scss';
 const Portfolio = () => {
   return (
     <section id="portfolio" className={styles.portfolio}>
-      <h2 className={styles.title}><span>My</span> Works</h2>
+      <h2 className={styles.title}>
+        <span>My</span> Works
+      </h2>
 
       <ul className={styles.list}>
         <li>
@@ -21,26 +23,35 @@ const Portfolio = () => {
         </li>
         <li>
           <Card
+            img="/img/works/taskify.jpg"
+            title="Taskify"
+            description="Task manager to keep track of your goals."
+            href="https://taskify-nailheart.vercel.app/"
+            githubUrl="https://github.com/Nailheart/taskify"
+            topics={['nextjs', 'prisma', 'typescript', 'stripe', 'tailwindcss']}
+          />
+        </li>
+        <li>
+          <Card
             img="/img/works/chatiko.jpg"
             title="Chatiko"
             description="Realtime chat app."
             href="https://chatiko.vercel.app"
             githubUrl="https://github.com/Nailheart/chatiko"
-            topics={['nextjs', 'typescript', 'pusher', 'upstash', 'redis', 'tailwindcss']}
-          />
-        </li>
-        <li>
-          <Card
-            img="/img/works/mogo.jpg"
-            title="Mogo"
-            description="Creative landing page template."
-            href="https://nailheart.github.io/Mogo"
-            githubUrl="https://github.com/Nailheart/Mogo"
-            topics={['simple-bar', 'sass', 'gulp', 'google-maps',]}
+            topics={[
+              'nextjs',
+              'typescript',
+              'pusher',
+              'upstash',
+              'redis',
+              'tailwindcss',
+            ]}
           />
         </li>
       </ul>
-      <Link className={styles.btn} href="/works">See more</Link>
+      <Link className={styles.btn} href="/works">
+        See more
+      </Link>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import { Card } from "@/components/card/card";
+import { Card } from '@/components/card/card';
 import styles from './styles.module.scss';
 
 const Works = () => {
@@ -10,12 +10,35 @@ const Works = () => {
         <ul className={styles.list}>
           <li>
             <Card
+              img="/img/works/taskify.jpg"
+              title="Taskify"
+              description="Task manager to keep track of your goals."
+              href="https://taskify-nailheart.vercel.app/"
+              githubUrl="https://github.com/Nailheart/taskify"
+              topics={[
+                'nextjs',
+                'prisma',
+                'typescript',
+                'stripe',
+                'tailwindcss',
+              ]}
+            />
+          </li>
+          <li>
+            <Card
               img="/img/works/chatiko.jpg"
               title="Chatiko"
               description="Realtime chat app."
               href="https://chatiko.vercel.app"
               githubUrl="https://github.com/Nailheart/chatiko"
-              topics={['nextjs', 'typescript', 'pusher', 'upstash', 'redis', 'tailwindcss']}
+              topics={[
+                'nextjs',
+                'typescript',
+                'pusher',
+                'upstash',
+                'redis',
+                'tailwindcss',
+              ]}
             />
           </li>
           <li>
@@ -45,7 +68,7 @@ const Works = () => {
               description="Creative landing page template."
               href="https://nailheart.github.io/Mogo/"
               githubUrl="https://github.com/Nailheart/Mogo"
-              topics={['simple-bar', 'sass', 'gulp', 'google-maps',]}
+              topics={['simple-bar', 'sass', 'gulp', 'google-maps']}
             />
           </li>
           <li>
@@ -98,7 +121,7 @@ const Works = () => {
               topics={['html', 'js', 'sass']}
             />
           </li>
-          
+
           <li>
             <Card
               img="/img/works/memory-game.jpg"
