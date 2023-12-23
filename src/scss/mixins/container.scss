@@ -1,5 +1,5 @@
-@use "../common/vars" as *;
-@use "./media" as *;
+@use '../common/vars' as *;
+@use './media' as *;
 
 @mixin container {
   max-width: map-get($widths, xl);
@@ -7,6 +7,7 @@
   margin-right: auto;
   padding-left: $gap-sm;
   padding-right: $gap-sm;
+  box-sizing: border-box;
 
   @include media-min(md) {
     padding-left: $gap-md;
