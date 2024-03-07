@@ -1,4 +1,4 @@
-import PC from '@/../public/img/pc.svg';
+import { PC } from '@/components/pc/pc';
 import styles from './styles.module.scss';
 
 const Intro = () => {
