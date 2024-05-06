@@ -26,7 +26,7 @@ const Portfolio = () => {
             img="/img/works/taskify.jpg"
             title="Taskify"
             description="Task manager to keep track of your goals."
-            href="https://taskify-nailheart.vercel.app/"
+            href="https://taskify-ashen-delta.vercel.app/"
             githubUrl="https://github.com/Nailheart/taskify"
             topics={['nextjs', 'prisma', 'typescript', 'stripe', 'tailwindcss']}
           />
