@@ -12,10 +12,10 @@ type Props = {
   img: string;
   title: string;
   description: string;
-  href: string;
+  href?: string;
   githubUrl: string;
   topics?: IconName[];
-}
+};
 
 const Card: FC<Props> = ({
   img,
@@ -29,11 +29,11 @@ const Card: FC<Props> = ({
     <div className={styles.card}>
       <Link
         className={styles.link_img}
-        href={href}
+        href={href ? href : githubUrl}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image 
+        <Image
           className={styles.img}
           width={650}
           height={800}
@@ -46,28 +46,24 @@ const Card: FC<Props> = ({
           <h3 className={styles.title}>
             <Link
               className={styles.title_link}
-              href={href}
+              href={href ? href : githubUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
               {title}
             </Link>
           </h3>
-          <SocialLink
-            title="github"
-            href={githubUrl}
-            iconName="github"
-          />
+          <SocialLink title="github" href={githubUrl} iconName="github" />
         </div>
         <p className={styles.text}>{description}</p>
         <div className={styles.topics}>
-          {topics?.map(topic => (
+          {topics?.map((topic) => (
             <div key={topic} title={topic}>
               <Icon name={topic} />
             </div>
           ))}
         </div>
-        
+
         <div className={styles.background}>
           <div className={styles.tiles}>
             <div className={cn(styles.tile, styles.tile_1)} />
